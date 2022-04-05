@@ -1,0 +1,114 @@
+body{
+    position: relative;
+}
+#container{    
+    width: fit-content;
+    height: 132px;
+    /* border: solid  black; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    /* overflow: hidden; */
+    z-index: -1;
+    
+}
+
+#container div{
+    
+    width: 130px;
+    height: 132px;
+    border: solid 8px black;
+    /* transform: translateY(50%);
+    transition: 1100ms; */
+    
+}
+#balance-text{
+    margin: 0;
+    padding-top: 0;
+    position: absolute;
+}
+#balance{
+    position: absolute;   
+    
+}
+ 
+.seven{
+    background-image: url("images/7.png");
+}
+
+.bell{
+    background-image: url("images/bell.png");
+}
+
+.dollar{
+    background-image: url("images/dollar.png");
+}
+
+.grape{
+    background-image: url("images/grape.png");
+}
+
+.lemon{
+    background-image: url("images/lemon.png");
+}
+
+.star{
+    background-image: url("images/star.png");
+}
+button{
+    display: flex;
+    margin: 20px auto;
+    font-size: 30px;
+}
+
+#result{
+    margin-top: 20px;
+    font-size: 60px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+#comment{
+    text-align: center;
+    font-size: 50px;
+}
+
+.scale{
+    transform: scale(2);
+    transition: .4s;
+    animation-duration: 10s;
+    animation-name: flash;
+}
+
+@keyframes flash {
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
